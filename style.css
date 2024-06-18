@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap');
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+* {
+    font-family: Figtree;
+    font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 920px;
+}
+
+.card {
+    background-color: white;
+    height: 524px;
+    width: 324px;
+    padding: 18px 45px 15px 45px;
+    border: 2px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    box-shadow: 7px 7px 0 hsl(0, 0%, 7%);
+}
+
+.card img {
+    width: 324px;
+    height: 204px;
+}
+
+.cardTittle {
+    height: 28px;
+    width: 82px;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 9px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.card a {
+    font-size: 23px;
+    text-decoration: none;
+    color:hsl(0, 0%, 7%)
+}
+
+.card a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.card h2 {
+    font-weight: 500;
+}
+
+.card p {
+    color: hsl(0, 0%, 50%);
+}
+
+.card .author {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.card .author img {
+    width: 32px;
+    height: 32px;
+}
+
+.card .authorName {
+    color: hsl(0, 0%, 7%);
+    margin-left: 5px;
+    font-weight: 800;
+}
+
