@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Yellow card</title>
 </head>
 <body>
-    <div class="cards">
-        <div class="container">
-            <div class="flex-row row-cols-lg-4 row-cols-xs-12">
-                <div class="card">
-                        <img src="imges/blogimage.png" alt="img">
-                        <div class="cardTittle">Learning</div>
-                        <h2>Published 21 Dec 2023</h2>
-                        <a href="#">HTML & CSS foundations</a>
-                        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-                        <div class="author">
-                            <img src="imges/userpic.png" alt="user">
-                            <div class="authorName">Greg Hooper</div>
-                        </div>
+    <div id="root">
+        <div class="hideBlock" id="hideBlock">
+            <div class="container">
+                <div class="formBlock">
+                    <h1>Write about your card</h1>
+                    <form id="form">
+                        <input type="text" placeholder="Your title" id="titleInput">
+                        <input type="text" placeholder="Your text" id="textInput">
+                        <input type="text" placeholder="Your name" id="nameInput">
+                    </form>
+                    <button id="addCard">Ok</button>
+                    <button id="closeButton">Close the form</button>
                 </div>
             </div>
         </div>
+    
+        <div class="cards" id="cards">
+            <div class="container">
+                <div class="flex-row row-cols-lg-4 row-cols-xs-12">
+                    <div class="card">
+                            <img src="imges/blogimage.png" alt="img">
+                            <div class="cardTittle">Learning</div>
+                            <h2>Published 21 Dec 2023</h2>
+                            <a href="#">HTML & CSS foundations</a>
+                            <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+                            <div class="author">
+                                <img src="imges/userpic.png" alt="user">
+                                <div class="authorName">Greg Hooper</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="buttonBlock container">
+            <button id="showButton">Add your card</button>
+        </div>
     </div>
+    
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
 
 </body>
 </html>
